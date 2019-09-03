@@ -1,14 +1,14 @@
 // ES6 (For Modern Browser)
-function test(value = 1) {
+function test_es6(value = 1) {
     console.log(value);
 }
-test(); // 1
+test_es6(); // 1
 
 
 
 // For IE 11 or below & Edge 12 or below Support
-function test(value) {
+function test_old(value) {
     value = typeof value !== 'undefined' ? value : 1;
     console.log(value);
 }
-test(); // 1
+test_old(); // 1
